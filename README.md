@@ -1,4 +1,3 @@
-
 <h1 data-importer="text" align="left">Hey 👋 I'm Ranjith</h1>
 
 ###
