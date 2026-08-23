@@ -13,16 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
       - name: Generate language stats
-        uses: readme-tools/readme-stats@v8
+        uses: stats-organization/github-readme-stats-action@v2
         with:
-          card: languages
+          card: top-langs
           options: username=ranjithkalai04-hub&layout=compact&hide_title=true
           path: dist/languages.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit stats
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: Update GitHub language stats
-          add: "dist/languages.svg"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/languages.svg
+          git commit -m "Update GitHub language stats" || exit 0
+          git push
