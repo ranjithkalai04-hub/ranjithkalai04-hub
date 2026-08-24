@@ -16,7 +16,7 @@
 
 ###
 
-<p data-importer="text" align="left">🔭 I’m currently working on DS project<br>🌱 I’m currently learning DSA<br>🤔 I’m looking for help with AI<br>💬 Ask me about FULLSTACK<br>📫 How to reach me: ranjithkalai04@gmail.com</p>
+<p data-importer="text" align="left">🔭 I’m currently working on DS RAG system project<br>🌱 I’m currently learning DSA<br>🤔 I’m looking for help with AI<br>💬 Ask me about FULLSTACK<br>📫 How to reach me: ranjithkalai04@gmail.com</p>
 
 ###
 
